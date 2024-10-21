@@ -1,27 +1,27 @@
-Parameter,Unit,Case 1: Earth LEO (Starlink),Case 2: Moon (Chang’e 4),Case 3: Mars (Odyssey),Case 4: Mercury (Bepi C.),Case 5: Saturn (Cassini),bob4o
-Total spacecraft power,W,200,500,750,1000,900,3223
-Transmitter power (spacecraft),W,50,200,100,200,100,1
-Transmitter power (ground station),W,400,400,1000,1000,1000,2
-Loss factor transmitter,-,0.8,0.8,0.8,0.8,0.8,3
-Loss factor receiver,-,0.7,0.7,0.7,0.7,0.7,2
-Downlink frequency,GHz,2.2,2.2,8.4,8.4,8.5,4
-Turn around ratio (uplink/downlink frequency),-,0.9208333333,0.9208333333,0.8511363636,0.8511363636,0.8511363636,3
-Antenna diameter spacecraft,m,0.2,4.2,2,1,4,2
-Antenna diameter ground station,m,0.5,5,35,35,35,1
-Orbit altitude,km,500,100,400,500,2000,1
-Elongation angle,deg,,,20,10,10,1
-Pointing offset angle (spacecraft),deg,0.1,0.1,0.1,0.05,0.1,1
-Required uplink data rate,bit/s,100000000,10000000,1000000,100000,100000,1
-Payload swath width angle,deg,20,45,10,10,20,1
-Payload pixel size,arcmin,0.1,0.1,0.05,0.05,0.2,1
-Payload bits per pixel,-,8,8,8,8,8,1
-Payload duty cycle (fraction),-,0.6,0.8,0.15,0.4,0.15,1
-Payload downlink time per day (fraction),-,0.125,0.1666666667,0.5,0.75,1,1
-Modulation/coding type,-,Turbo-Codes: 1/6 rate,Turbo-Codes: 1/6 rate,Turbo-Codes: 1/6 rate,Turbo-Codes: 1/6 rate,Turbo-Codes: 1/6 rate,Uncoded
-Required BER,-,0.000001,0.000001,0.000001,0.000001,0.000001,.1
-Efficiency of sc antenna,,0.55,0.55,0.55,0.55,0.55,1
-Efficiency of ground antenna,,0.55,0.55,0.55,0.55,0.55,1
-Temperature of sc antenna,K,290,290,290,290,290,1
-Temperature of ground antenna,K,290,290,290,290,290,1
-Celestial object to be orbited,,Earth,Moon,Mars,Mercury,Saturn,Moon
-Elevation angle,deg,30,,,,,
+Parameter,Unit,Case 1: Earth LEO (Starlink),Case 2: Moon (Chang’e 4),Case 3: Mars (Odyssey),Case 4: Mercury (Bepi C.),Case 5: Saturn (Cassini)
+Total spacecraft power,W,200,500,750,1000,900
+Transmitter power (spacecraft),W,50,200,190,250,275
+Transmitter power (ground station),W,400,400,1000,1000,1000
+Loss factor transmitter,-,.8,.8,.9,.9,.95
+Loss factor receiver,-,.7,.7,.9,.9,.95
+Downlink frequency,GHz,2.2,2.2,8.4,8.4,12
+Turn around ratio (uplink/downlink frequency),-,0.9208333333,0.9208333333,0.8511363636,0.8511363636,0.8511363636
+Antenna diameter spacecraft,m,0.2,4.2,2,1,4
+Antenna diameter ground station,m,0.5,5,70,35,70
+Orbit altitude,km,500,100,550,500,2000
+Elongation angle,deg,,,20,10,10
+Pointing offset angle (spacecraft),deg,0.1,0.1,0.1,0.05,0.05
+Required uplink data rate,bit/s,100000000,10000000,1000000,100000,100000
+Payload swath width angle,deg,20,45,7.5,7.5,8
+Payload pixel size,arcmin,0.1,0.1,.05,.12,0.2
+Payload bits per pixel,-,8,8,8,8,8
+Payload duty cycle (fraction),-,.7,.6,0.15,.2,0.15
+Payload downlink time per day (fraction),-,0.125,0.1666666667,0.5,1,1
+Modulation/coding type,-,LDPC: 3/4 rate,LDPC: 3/4 rate,Turbo-Codes: 1/6 rate,Turbo-Codes: 1/6 rate,Turbo-Codes: 1/6 rate
+Required BER,-,0.000001,0.000001,0.000001,0.000001,0.000001
+Efficiency of sc antenna,,0.55,.7,.7,.7,.7
+Efficiency of ground antenna,,0.55,.7,.7,.7,.7
+Temperature of sc antenna,K,290,290,290,290,290
+Temperature of ground antenna,K,290,290,290,290,290
+Celestial object to be orbited,,Earth,Moon,Mars,Mercury,Saturn
+Elevation angle,deg,30,,,,

@@ -67,7 +67,7 @@ def find_B_R(Swath_width,px_size,b_p,h,D_C,T_D, celestial_object):
 			GM = 3.793118799*(10**16)
 			R = 58232000
 	w = np.sqrt(GM/(R+h)**3)*180/np.pi
-	return ((Swath_width/px_size)*b_p)*(w/px_size)*(D_C/T_D)
+	return ((Swath_width/px_size)*b_p)*(w/px_size)*(D_C/T_D)*R/h
 
 #finds coding gain [dB], given coding type
 def Gain_Coding(encoding_type):

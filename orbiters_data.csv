@@ -1,23 +1,23 @@
-Parameter,Case 1: Earth LEO (Starlink),Case 2: Moon (Chang’e 4),Case 3: Mars (Odyssey),Case 4: Mercury (Bepi C.),Case 5: Saturn (Cassini),bob4o
-Downlink Eb/N0,16.847,14.204,-2.545,-7.044,-3.529,66.376
-Required Downlink Eb/N0,0.53,0.53,0.53,0.53,0.53,-0.856
-Downlink Margin,16.317,13.674,-3.075,-7.574,-4.059,67.231
-Downlink EIRP,26.7,59.165,61.347,58.337,67.471,43.24
-Downlink Free-Space Loss,-158.472,-210.992,-270.972,-269.823,-293.268,-216.185
-Downlink Antenna Pointing Loss,-0.0,-0.023,-0.077,-0.005,-0.315,-1.741
-Downlink Receiver Antenna Gain,18.638,38.638,67.177,67.177,67.28,32.448
-Downlink Receiver Antenna Loss,-1.549,-1.549,-1.549,-1.549,-1.549,3.01
-1/k,228.599,228.599,228.599,228.599,228.599,228.599
-1/T_sys,-24.624,-24.624,-24.624,-24.624,-24.624,0.0
-1/B_R,-72.445,-75.01,-62.447,-65.157,-47.123,-22.995
-Uplink Eb/N0,17.607,21.531,8.579,13.707,2.509,103.665
-Required Uplink Eb/N0,0.53,0.53,0.53,0.53,0.53,-0.856
-Uplink Margin,17.077,21.001,8.049,13.177,1.979,104.52
-Uplink EIRP,42.393,62.393,94.228,94.228,94.331,48.011
-Uplink Free-Space Loss,-157.755,-210.276,-269.572,-268.423,-291.868,-225.727
-Uplink Antenna Pointing Loss,0.0,0.0,0.0,0.0,0.0,0.0
-Uplink Receiver Antenna Gain,9.963,36.407,40.916,34.896,47.04,48.011
-Uplink Receiver Antenna Loss,-0.969,-0.969,-0.969,-0.969,-0.969,4.771
-1/k,228.599,228.599,228.599,228.599,228.599,228.599
-1/T_sys,-24.624,-24.624,-24.624,-24.624,-24.624,0.0
-1/B_R,-80.0,-70.0,-60.0,-50.0,-50.0,0.0
+Parameter,Case 1: Earth LEO (Starlink),Case 2: Moon (Chang’e 4),Case 3: Mars (Odyssey),Case 4: Mercury (Bepi C.),Case 5: Saturn (Cassini)
+Downlink Eb/N0,5.125,5.149,3.565,3.853,3.543
+Required Downlink Eb/N0,0.53,0.53,0.53,0.53,0.53
+Downlink Margin,4.596,4.619,3.035,3.323,3.014
+Downlink EIRP,26.7,60.212,65.694,60.865,76.653
+Downlink Free-Space Loss,-158.472,-210.992,-270.972,-269.823,-296.263
+Downlink Antenna Pointing Loss,-0.0,-0.023,-0.077,-0.005,-0.157
+Downlink Receiver Antenna Gain,18.638,39.685,74.245,68.225,77.343
+Downlink Receiver Antenna Loss,-1.549,-1.549,-0.458,-0.458,-0.223
+1/k,228.599,228.599,228.599,228.599,228.599
+1/T_sys,-24.624,-24.624,-24.624,-24.624,-24.624
+1/B_R,-84.167,-86.159,-68.842,-58.927,-57.785
+Uplink Eb/N0,17.607,23.626,18.297,17.405,15.692
+Required Uplink Eb/N0,0.53,0.53,0.53,0.53,0.53
+Uplink Margin,17.077,23.096,17.767,16.875,15.162
+Uplink EIRP,42.393,63.441,102.388,96.367,105.72
+Uplink Free-Space Loss,-157.755,-210.276,-269.572,-268.423,-294.863
+Uplink Antenna Pointing Loss,0.0,0.0,0.0,0.0,0.0
+Uplink Receiver Antenna Gain,9.963,37.455,41.964,35.943,51.082
+Uplink Receiver Antenna Loss,-0.969,-0.969,-0.458,-0.458,-0.223
+1/k,228.599,228.599,228.599,228.599,228.599
+1/T_sys,-24.624,-24.624,-24.624,-24.624,-24.624
+1/B_R,-80.0,-70.0,-60.0,-50.0,-50.0
