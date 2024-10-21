@@ -1,7 +1,7 @@
 Parameter,Case 1: Earth LEO (Starlink),Case 2: Moon (Chang’e 4),Case 3: Mars (Odyssey),Case 4: Mercury (Bepi C.),Case 5: Saturn (Cassini)
-Downlink Eb/N0,5.125,5.149,3.565,3.853,3.543
+Downlink Eb/N0,5.125,3.9,3.565,3.853,3.543
 Required Downlink Eb/N0,0.53,0.53,0.53,0.53,0.53
-Downlink Margin,4.596,4.619,3.035,3.323,3.014
+Downlink Margin,4.596,3.37,3.035,3.323,3.014
 Downlink EIRP,26.7,60.212,65.694,60.865,76.653
 Downlink Free-Space Loss,-158.472,-210.992,-270.972,-269.823,-296.263
 Downlink Antenna Pointing Loss,-0.0,-0.023,-0.077,-0.005,-0.157
@@ -9,7 +9,7 @@ Downlink Receiver Antenna Gain,18.638,39.685,74.245,68.225,77.343
 Downlink Receiver Antenna Loss,-1.549,-1.549,-0.458,-0.458,-0.223
 1/k,228.599,228.599,228.599,228.599,228.599
 1/T_sys,-24.624,-24.624,-24.624,-24.624,-24.624
-1/B_R,-84.167,-86.159,-68.842,-58.927,-57.785
+1/B_R,-84.167,-87.409,-68.842,-58.927,-57.785
 Uplink Eb/N0,17.607,23.626,18.297,17.405,15.692
 Required Uplink Eb/N0,0.53,0.53,0.53,0.53,0.53
 Uplink Margin,17.077,23.096,17.767,16.875,15.162
