@@ -106,8 +106,8 @@ def RunCalculations():
 	orbiters = GetOrbiters()
 
 	for orbiter in orbiters.values():
-		# Extract variables from the orbiter object
-		for i in "majkati":
+		# Extract variables from the orbiter object(unnecessary for, just to make this part of the code collapsable in VS code)
+		for i in "7":
 			celestial_object = orbiter.celestial_object
 			h_orbit = orbiter.h_orbit
 			elongation_angle = orbiter.elongation_angle
@@ -143,23 +143,28 @@ def RunCalculations():
 		sc_alpha_half_power = find_alpha_half_power(f_downlink, D_sc)
 		loss_transmission_pointing_downlink = find_L_tp(e_tx, sc_alpha_half_power)
 		loss_free_space_downlink = find_L_fs(max_distance, f_downlink)
-		sc_required_data_rate = find_B_R(swath_angle, pixel_size, bits_per_pixel, h_orbit, duty_cycle, downlink_time_per_day, celestial_object)
-		downlink_received_Eb_N0 = find_received_Eb_N0(sc_EIRP, loss_free_space_downlink, loss_transmission_pointing_downlink, L_receiver, grnd_antenna_gain_downlink, sc_required_data_rate, grnd_antenna_T)
+		sc_required_data_rate = find_B_R(swath_angle, pixel_size, bits_per_pixel, h_orbit, duty_cycle, 
+								   		downlink_time_per_day, celestial_object)
+		downlink_received_Eb_N0 = find_received_Eb_N0(sc_EIRP, loss_free_space_downlink, 
+													loss_transmission_pointing_downlink, L_receiver, 
+													grnd_antenna_gain_downlink, sc_required_data_rate, grnd_antenna_T)
 		downlink_req_Eb_N0 = find_req_Eb_N0(BER, encoding_type)
 		downlink_margin = downlink_received_Eb_N0 / downlink_req_Eb_N0
-		
+
 		sc_antenna_gain_uplink = find_Gain(D_sc, f_uplink, sc_antnenna_efficiency)
 		grnd_antenna_gain_uplink = find_Gain(D_grnd, f_uplink, grnd_antnenna_efficiency)
 		grnd_EIRP = find_EIRP(P_t_grnd, L_receiver, grnd_antenna_gain_uplink)
 		loss_free_space_uplink = find_L_fs(max_distance, f_uplink)
 		grnd_required_data_rate = R_uplink
 		loss_transmission_pointing_uplink = 1
-		uplink_received_Eb_N0 = find_received_Eb_N0(grnd_EIRP, loss_free_space_uplink, loss_transmission_pointing_uplink, L_transmitter, sc_antenna_gain_uplink, grnd_required_data_rate, sc_antenna_T)
+		uplink_received_Eb_N0 = find_received_Eb_N0(grnd_EIRP, loss_free_space_uplink, 
+											  		loss_transmission_pointing_uplink, L_transmitter, 
+													sc_antenna_gain_uplink, grnd_required_data_rate, sc_antenna_T)
 		uplink_req_Eb_N0 = find_req_Eb_N0(BER, encoding_type)
 		uplink_margin = uplink_received_Eb_N0 / uplink_req_Eb_N0
 
 		# Reassign the results back to the orbiter object
-		for i in "majkati":
+		for i in "7":
 			orbiter.max_distance = max_distance
 			orbiter.sc_antenna_gain_downlink = sc_antenna_gain_downlink
 			orbiter.grnd_antenna_gain_downlink = grnd_antenna_gain_downlink
