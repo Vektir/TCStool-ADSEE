@@ -1,7 +1,6 @@
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
-#import dash_table
 from dash import dash_table
 import pandas as pd
 import calculate_orbiters
@@ -21,7 +20,10 @@ app.layout = html.Div([
     # Editable Table for 'Better TCS data.csv'
     dash_table.DataTable(
         id='editable-table',
-        columns=[{"name": f"{i}  ", "id": i, "deletable": True} for i in df.columns],  # Add space for button
+        columns=[
+            {"name": f"{col}  ", "id": col, "deletable": False} if i < 2 else {"name": f"{col}  ", "id": col, "deletable": True}
+            for i, col in enumerate(df.columns)  # First two columns are not deletable
+        ],
         data=df.to_dict('records'),
         editable=True,
         style_header={
@@ -73,7 +75,7 @@ def handle_table_updates(add_column_n_clicks, save_button_n_clicks, new_column_n
     if triggered_id == 'add-column-button' and add_column_n_clicks > 0:
         # Adding a new column
         if new_column_name and not any(col['name'] == new_column_name for col in current_columns):
-            current_columns.append({'name': new_column_name, 'id': new_column_name})
+            current_columns.append({'name': new_column_name, 'id': new_column_name, 'deletable': True})
             for row in current_data:
                 row[new_column_name] = ""  # Initialize new column data
             return current_columns, current_data, f"Column '{new_column_name}' added successfully!", "", [], []
